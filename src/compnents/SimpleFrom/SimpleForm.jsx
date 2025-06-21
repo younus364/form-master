@@ -1,12 +1,19 @@
 
 
-function SimpleForm(props) {
+function SimpleForm() {
+    const handleSubmit = e =>{
+        e.preventDefault()
+        console.log(e.target.name.value)
+    }
     return (
         <div>
-            <form >
-                <input type="text" name="" id="" />
+            <form onSubmit={handleSubmit}>
+                <input type="text" name="name"/>
                 <br />
-                <button>submit</button>
+                <input type="email" name="email" id="" />
+                <br />
+                <input type="submit" value="submit" />
+               
             </form>
         </div>
     );
