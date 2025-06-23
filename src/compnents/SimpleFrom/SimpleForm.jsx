@@ -12,6 +12,8 @@ function SimpleForm() {
                 <br />
                 <input type="email" name="email" id="" />
                 <br />
+                <input type="password" name="password" id="" />
+                <br />
                 <input type="submit" value="submit" />
                
             </form>
